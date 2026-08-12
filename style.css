@@ -282,47 +282,51 @@ footer {
     display: block;
 }
 /* =========================
-   HERO - NEW LAYOUT
+   HERO
 ========================= */
 
 .hero {
-    position: relative;
-    min-height: 90vh;
+    min-height: 700px;
+    padding: 80px 6vw 40px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 40px;
-    padding: 80px 6vw;
+
+    position: relative;
     overflow: hidden;
 }
 
 .hero-content {
-    position: relative;
+    align-self: start;
+    padding-top: 80px;
     z-index: 2;
-    max-width: 600px;
 }
 
 .hero-visual {
-    position: relative;
     height: 100%;
-    min-height: 600px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    overflow: visible;
+
+    position: relative;
 }
 
 .hero-image {
-    position: relative;
     width: 100%;
-    max-width: 500px;
-    overflow: visible;
+    height: 600px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .hero-image img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+
     object-fit: contain;
     object-position: center bottom;
+
+    display: block;
 }
