@@ -1,267 +1,103 @@
-/* =========================
-   RESET
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html {
-    scroll-behavior: smooth;
-}
+    <title>Carolin Shely — Social Media Specialist</title>
 
-body {
-    background: #f5f5f2;
-    color: #111111;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-/* =========================
-   NAVIGATION
-========================= */
+    <header class="navbar">
+        <div class="logo">Carolin</div>
 
-.navbar {
-    width: 100%;
-    padding: 28px 5vw;
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    <main>
 
-    border-bottom: 1px solid #ddddda;
-}
+        <section class="hero">
 
-.logo {
-    font-size: 18px;
-    font-weight: 700;
-}
+            <div class="hero-text">
 
-nav {
-    display: flex;
-    gap: 32px;
-}
+                <p class="eyebrow">
+                    SOCIAL MEDIA SPECIALIST
+                </p>
 
-nav a {
-    color: #111111;
-    text-decoration: none;
-    font-size: 13px;
-}
+                <h1>
+                    Hi, I'm<br>
+                    Carolin.
+                </h1>
 
+                <p class="hero-description">
+                    I create engaging social media content and
+                    digital experiences.
+                </p>
 
-/* =========================
-   HERO
-========================= */
+                <a href="#work" class="hero-link">
+                    View my work →
+                </a>
 
-.hero {
-    min-height: calc(100vh - 75px);
+            </div>
 
-    padding: 8vh 5vw 0;
+            <div class="hero-image">
+                <img src="IMG_0898.png" alt="Carolin Shely">
+            </div>
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+        </section>
 
-    align-items: center;
+        <section id="work" class="work">
 
-    position: relative;
-    overflow: hidden;
-}
+            <p class="eyebrow">
+                SELECTED WORK
+            </p>
 
-.hero-text {
-    position: relative;
-    z-index: 2;
-}
+            <h2>
+                Projects that<br>
+                tell a story.
+            </h2>
 
-.eyebrow {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    margin-bottom: 25px;
-}
+        </section>
 
-.hero h1 {
-    font-size: clamp(64px, 8vw, 130px);
-    line-height: 0.85;
-    letter-spacing: -0.06em;
-    margin-bottom: 35px;
-}
+        <section id="about" class="about">
 
-.hero-description {
-    max-width: 420px;
+            <p class="eyebrow">
+                ABOUT ME
+            </p>
 
-    font-size: 18px;
-    line-height: 1.5;
+            <h2>
+                Turning ideas<br>
+                into meaningful<br>
+                experiences.
+            </h2>
 
-    margin-bottom: 25px;
-}
+        </section>
 
-.hero-link {
-    color: #111111;
-    font-size: 13px;
-    font-weight: 600;
+        <section id="contact" class="contact">
 
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
+            <p class="eyebrow">
+                LET'S WORK TOGETHER
+            </p>
 
+            <h2>
+                Have an idea?<br>
+                Let's make it happen.
+            </h2>
 
-/* =========================
-   HERO IMAGE
-========================= */
+        </section>
 
-.hero-image {
-    height: 100%;
+    </main>
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    <footer>
+        © 2026 Carolin Shely
+    </footer>
 
-    position: relative;
-}
-
-.hero-image img {
-    width: min(100%, 520px);
-    height: auto;
-
-    display: block;
-
-    object-fit: contain;
-}
-
-
-/* =========================
-   WORK
-========================= */
-
-.work {
-    padding: 140px 5vw;
-
-    border-top: 1px solid #ddddda;
-}
-
-.work h2,
-.about h2,
-.contact h2 {
-    font-size: clamp(48px, 6vw, 100px);
-    line-height: 0.9;
-    letter-spacing: -0.05em;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about {
-    padding: 140px 5vw;
-
-    border-top: 1px solid #ddddda;
-
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 50px;
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact {
-    padding: 140px 5vw;
-
-    border-top: 1px solid #ddddda;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    padding: 30px 5vw;
-
-    border-top: 1px solid #ddddda;
-
-    font-size: 11px;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .navbar {
-        padding: 22px 20px;
-    }
-
-    nav {
-        gap: 18px;
-    }
-
-    nav a {
-        font-size: 11px;
-    }
-
-
-    .hero {
-        min-height: auto;
-
-        padding: 70px 20px 0;
-
-        grid-template-columns: 1fr;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-    .hero h1 {
-        font-size: 72px;
-    }
-
-    .hero-description {
-        font-size: 16px;
-        max-width: 330px;
-    }
-
-    .hero-image {
-        width: 100%;
-        height: auto;
-
-        margin-top: 50px;
-
-        justify-content: center;
-    }
-
-    .hero-image img {
-        width: 90%;
-        max-width: 400px;
-    }
-
-
-    .work,
-    .about,
-    .contact {
-        padding: 90px 20px;
-    }
-
-    .about {
-        display: block;
-    }
-
-    .about h2 {
-        margin-top: 30px;
-    }
-
-    .work h2,
-    .about h2,
-    .contact h2 {
-        font-size: 52px;
-    }
-}
+</body>
+</html>
